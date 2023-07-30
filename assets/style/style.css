@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "CormorantUnicase-Regular";
+  src: url(../fonts/Cormorant_Unicase/CormorantUnicase-Regular.ttf);
+}
+
+@font-face {
+  font-family: "CormorantUnicase-Bold";
+  src: url(../fonts/Cormorant_Unicase/CormorantUnicase-Bold.ttf);
+}
+
+@font-face {
+  font-family: "CormorantUnicase-Light";
+  src: url(../fonts/Cormorant_Unicase/CormorantUnicase-Light.ttf);
+}
+
+@font-face {
+  font-family: "monte_carlo";
+  src: url(../fonts/Monte_Carlo/monte_carlo.woff);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+header {
+  background: linear-gradient(70deg, rgb(18, 18, 54), rgb(50, 101, 136));
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: inherit;
+  width: 700px;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(108, 219, 234);
+  font-family: CormorantUnicase-Regular, serif;
+}
+
+.nav a:hover {
+  color: #f8ffda; /* Меняем цвет текста */
+  -webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  font-family: monte_carlo, serif;
+  margin-top: 20px;
+  position: relative;
+  color: burlywood;
+}
+
+.name p {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav > a {
+  text-decoration: none;
+}
+
+.icon {
+  position: absolute;
+  width: 50px;
+  left: -35px;
+  bottom: -5px;
+}
+.greeting {
+  background-image: url(../img/background.webp);
+  background-size: 100%;
+  width: 100vw;
+}
+
+.text {
+  height: 400px;
+  font-family: CormorantUnicase-Regular, serif;
+  color: antiquewhite;
+  font-size: 18px;
+  line-height: 30px;
+  box-sizing: border-box;
+  width: 500px;
+  height: 400px;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: CormorantUnicase-Bold, serif;
+  color: antiquewhite;
+}
+
+.gallery {
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  align-self: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.item {
+  border: 2px solid rgb(247, 252, 191);
+  box-sizing: border-box;
+  width: 300px;
+  height: 400px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-family: CormorantUnicase-Bold, serif;
+  color: antiquewhite;
+  margin: auto;
+}
+
+.gallery :nth-child(-n + 3) {
+  margin-top: 0;
+}
+
+.gallery :last-child {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.item_img {
+  width: 280px;
+  height: 300px;
+  padding-top: 10px;
+  filter: blur(5px); /* Размытие изображения */
+  transition: 1s; /* Время перехода */
+}
+
+.item_img:hover {
+  filter: blur(0); /* Отменяем размытие */
+}
+
+.description {
+  font-family: CormorantUnicase-Regular, serif;
+  color: antiquewhite;
+  transition: 1s; /* Время эффекта */
+  text-align: center;
+  cursor: pointer;
+}
+
+.description:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  height: 150px;
+  background: linear-gradient(70deg, rgb(18, 18, 54), rgb(50, 101, 136));
+}
+
+.links {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+}
+
+.telegram,
+.gmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  font-family: CormorantUnicase-Light, serif;
+  color: blanchedalmond;
+}
+
+.myself {
+  font-size: small;
+}
